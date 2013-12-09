@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="InlinedApi">
+        <ignore path="src/com/tutor/activity/SlidingActivity.java" />
+    </issue>
+    <issue id="SmallSp" severity="ignore" />
+</lint>

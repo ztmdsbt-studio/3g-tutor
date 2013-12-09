@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_banner"
+        android:gravity="center_vertical" >
+<!--             <EditText -->
+<!--                 android:id="@+id/et_search_condition" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="fill_parent" -->
+<!--                 android:gravity="left|center_vertical" -->
+<!--                 android:text="输入要查找的应用名称" -->
+<!--                 android:textColor="@color/gray" -->
+<!--                 android:textSize="14sp" /> -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/backup"
+            android:onClick="backToPrevious" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/refresh"
+                android:onClick="refreshActivity" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbackground_title"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tab_More_Search_LinLay"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/searchinputbackground"
+            android:gravity="right" >
+
+            <EditText
+                android:id="@+id/et_search_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/btn_search_app"
+                android:background="@color/touming"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="输入要查找的应用名称"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_search_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/selector_button"
+                android:gravity="right|center_vertical" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbackground_title"
+        android:gravity="left|center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="所有分类"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_app_categories"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

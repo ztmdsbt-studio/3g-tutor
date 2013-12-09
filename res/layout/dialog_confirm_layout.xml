@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    style="@style/Theme_dialog"
+    android:background="@drawable/confirm_dialog_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="操作完成！"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button 
+        android:id="@+id/btn_conform_dialog"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp" 
+        android:background="@drawable/selector_operate_succeed"/>
+</LinearLayout>

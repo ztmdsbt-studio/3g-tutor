@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:guest" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="guest" targetNamespace="urn:guest" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types xmlns="http://schemas.xmlsoap.org/wsdl/" />
+  <wsdl:message name="getGuestRequest">
+    <wsdl:part name="uid" type="xsd:string" />
+    <wsdl:part name="page" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getGuestResponse">
+    <wsdl:part name="getGuest" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessageDiyRequest">
+    <wsdl:part name="uid" type="xsd:string" />
+    <wsdl:part name="tname" type="xsd:string" />
+    <wsdl:part name="r2_id" type="xsd:string" />
+    <wsdl:part name="cellphone" type="xsd:string" />
+    <wsdl:part name="aid" type="xsd:string" />
+    <wsdl:part name="title" type="xsd:string" />
+    <wsdl:part name="message" type="xsd:string" />
+    <wsdl:part name="time" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessageDiyResponse">
+    <wsdl:part name="sendMessageDiy" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessageAllRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+    <wsdl:part name="tname" type="xsd:string" />
+    <wsdl:part name="aid" type="xsd:string" />
+    <wsdl:part name="r2_id" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessageAllResponse">
+    <wsdl:part name="sendMessageAll" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessagePageRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+    <wsdl:part name="tname" type="xsd:string" />
+    <wsdl:part name="r2_id" type="xsd:string" />
+    <wsdl:part name="aid" type="xsd:string" />
+    <wsdl:part name="cellphone" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessagePageResponse">
+    <wsdl:part name="sendMessagePage" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="tutorStatisticsRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+    <wsdl:part name="time" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="tutorStatisticsResponse">
+    <wsdl:part name="tutorStatistics" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="tutorResultStatisticsRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+    <wsdl:part name="r2_id" type="xsd:string" />
+    <wsdl:part name="time" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="tutorResultStatisticsResponse">
+    <wsdl:part name="tutorResultStatistics" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="searchAppRequest">
+    <wsdl:part name="key" type="xsd:string" />
+    <wsdl:part name="cid" type="xsd:string" />
+    <wsdl:part name="page" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="searchAppResponse">
+    <wsdl:part name="searchApp" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addAppFavoriteRequest">
+    <wsdl:part name="aid" type="xsd:string" />
+    <wsdl:part name="tid" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addAppFavoriteResponse">
+    <wsdl:part name="addAppFavorite" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="removeAppFavoriteRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+    <wsdl:part name="aid" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="removeAppFavoriteResponse">
+    <wsdl:part name="removeAppFavorite" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="listAppFavoriteRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="listAppFavoriteResponse">
+    <wsdl:part name="listAppFavorite" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getServiceCategoryRequest" />
+  <wsdl:message name="getServiceCategoryResponse">
+    <wsdl:part name="getServiceCategory" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getServiceRequest">
+    <wsdl:part name="cid" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getServiceResponse">
+    <wsdl:part name="getService" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessageServiceDiyRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+    <wsdl:part name="sid" type="xsd:string" />
+    <wsdl:part name="cellphone" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessageServiceDiyResponse">
+    <wsdl:part name="sendMessageServiceDiy" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessageServicePageRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+    <wsdl:part name="sid" type="xsd:string" />
+    <wsdl:part name="cellphone" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMessageServicePageResponse">
+    <wsdl:part name="sendMessageServicePage" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addServiceFavoriteRequest">
+    <wsdl:part name="id" type="xsd:string" />
+    <wsdl:part name="tid" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addServiceFavoriteResponse">
+    <wsdl:part name="addServiceFavorite" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="removeServiceFavoriteRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+    <wsdl:part name="id" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="removeServiceFavoriteResponse">
+    <wsdl:part name="removeServiceFavorite" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="searchServiceRequest">
+    <wsdl:part name="key" type="xsd:string" />
+    <wsdl:part name="category" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="searchServiceResponse">
+    <wsdl:part name="searchService" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="serviceStatisticsRequest">
+    <wsdl:part name="tid" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="serviceStatisticsResponse">
+    <wsdl:part name="serviceStatistics" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="guestPort">
+    <wsdl:operation name="getGuest">
+      <wsdl:input message="tns:getGuestRequest" />
+      <wsdl:output message="tns:getGuestResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageDiy">
+      <wsdl:input message="tns:sendMessageDiyRequest" />
+      <wsdl:output message="tns:sendMessageDiyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageAll">
+      <wsdl:input message="tns:sendMessageAllRequest" />
+      <wsdl:output message="tns:sendMessageAllResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMessagePage">
+      <wsdl:input message="tns:sendMessagePageRequest" />
+      <wsdl:output message="tns:sendMessagePageResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="tutorStatistics">
+      <wsdl:input message="tns:tutorStatisticsRequest" />
+      <wsdl:output message="tns:tutorStatisticsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="tutorResultStatistics">
+      <wsdl:input message="tns:tutorResultStatisticsRequest" />
+      <wsdl:output message="tns:tutorResultStatisticsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="searchApp">
+      <wsdl:input message="tns:searchAppRequest" />
+      <wsdl:output message="tns:searchAppResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addAppFavorite">
+      <wsdl:input message="tns:addAppFavoriteRequest" />
+      <wsdl:output message="tns:addAppFavoriteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="removeAppFavorite">
+      <wsdl:input message="tns:removeAppFavoriteRequest" />
+      <wsdl:output message="tns:removeAppFavoriteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="listAppFavorite">
+      <wsdl:input message="tns:listAppFavoriteRequest" />
+      <wsdl:output message="tns:listAppFavoriteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getServiceCategory">
+      <wsdl:input message="tns:getServiceCategoryRequest" />
+      <wsdl:output message="tns:getServiceCategoryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getService">
+      <wsdl:input message="tns:getServiceRequest" />
+      <wsdl:output message="tns:getServiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageServiceDiy">
+      <wsdl:input message="tns:sendMessageServiceDiyRequest" />
+      <wsdl:output message="tns:sendMessageServiceDiyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageServicePage">
+      <wsdl:input message="tns:sendMessageServicePageRequest" />
+      <wsdl:output message="tns:sendMessageServicePageResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addServiceFavorite">
+      <wsdl:input message="tns:addServiceFavoriteRequest" />
+      <wsdl:output message="tns:addServiceFavoriteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="removeServiceFavorite">
+      <wsdl:input message="tns:removeServiceFavoriteRequest" />
+      <wsdl:output message="tns:removeServiceFavoriteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="searchService">
+      <wsdl:input message="tns:searchServiceRequest" />
+      <wsdl:output message="tns:searchServiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceStatistics">
+      <wsdl:input message="tns:serviceStatisticsRequest" />
+      <wsdl:output message="tns:serviceStatisticsResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="guestBinding" type="tns:guestPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getGuest">
+      <soap:operation soapAction="urn:guest#guest#getGuest" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageDiy">
+      <soap:operation soapAction="urn:guest#guest#sendMessageDiy" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageAll">
+      <soap:operation soapAction="urn:guest#guest#sendMessageAll" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMessagePage">
+      <soap:operation soapAction="urn:guest#guest#sendMessagePage" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tutorStatistics">
+      <soap:operation soapAction="urn:guest#guest#tutorStatistics" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tutorResultStatistics">
+      <soap:operation soapAction="urn:guest#guest#tutorResultStatistics" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchApp">
+      <soap:operation soapAction="urn:guest#guest#searchApp" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAppFavorite">
+      <soap:operation soapAction="urn:guest#guest#addAppFavorite" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeAppFavorite">
+      <soap:operation soapAction="urn:guest#guest#removeAppFavorite" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listAppFavorite">
+      <soap:operation soapAction="urn:guest#guest#listAppFavorite" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceCategory">
+      <soap:operation soapAction="urn:guest#guest#getServiceCategory" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getService">
+      <soap:operation soapAction="urn:guest#guest#getService" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageServiceDiy">
+      <soap:operation soapAction="urn:guest#guest#sendMessageServiceDiy" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMessageServicePage">
+      <soap:operation soapAction="urn:guest#guest#sendMessageServicePage" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addServiceFavorite">
+      <soap:operation soapAction="urn:guest#guest#addServiceFavorite" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeServiceFavorite">
+      <soap:operation soapAction="urn:guest#guest#removeServiceFavorite" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchService">
+      <soap:operation soapAction="urn:guest#guest#searchService" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceStatistics">
+      <soap:operation soapAction="urn:guest#guest#serviceStatistics" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:guest" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="guest">
+    <documentation />
+    <wsdl:port name="guestPort" binding="tns:guestBinding">
+      <soap:address location="http://timeapi.snty.cc:80/info.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

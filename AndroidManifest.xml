@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.totur"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.tutor.model.ApplicationData"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tutor.activity.LoginActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tutor.activity.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <!-- <activity -->
+        <!-- android:name="com.tutor.activity.EntryActivity" -->
+        <!-- android:label="@string/title_activity_entry" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.tutor.activity.TabMainAct" -->
+        <!-- android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.tutor.activity.UserInfoActivity"
+            android:label="@string/title_activity_user_info" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.TodoExchangeActivity"
+            android:label="@string/title_activity_todo_exchange" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.AppDetailActivity"
+            android:label="@string/title_activity_app_detail" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.Customer_recommendActivity"
+            android:label="@string/title_activity_customer_recommend" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.SlidingActivity"
+            android:label="12" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.AppTutorActivity"
+            android:label="@string/title_activity_app_tutor" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.JfAppDetailActivity"
+            android:label="@string/title_activity_jf_app_detail" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.ForgetPwdActivity"
+            android:label="@string/title_activity_forget_pwd" >
+        </activity>
+        <activity android:name="com.tutor.activity.AppCountActivity" >
+        </activity>
+        <activity android:name="com.tutor.activity.Appfavorite" >
+        </activity>
+        <activity android:name="com.tutor.activity.JFAppTutorActivity" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.MoreActivity"
+            android:label="@string/title_activity_more" >
+        </activity>
+        <activity
+            android:name="com.tutor.activity.SearchResultActivity"
+            android:label="@string/title_activity_serach_result" >
+        </activity>
+    </application>
+
+</manifest>

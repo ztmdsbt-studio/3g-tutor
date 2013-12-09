@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <!-- Guide Helper IDS -->
+  <item type="id" name="root_layout"/>
+  <item type="id" name="top_right_btn"/>
+  <item type="id" name="scroll_layout"/>
+</resources>

@@ -1,0 +1,30 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="spinne_style">
+        <item name="android:background">@drawable/selector_spinner</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem"></style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem"></style>
+
+    <style name="mycheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_checkbox_contacts</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:height">35.0dip</item>
+    </style>
+
+    <style name="animation_search_pop">
+        <item name="android:windowEnterAnimation">@anim/pop_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_fade_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_banner"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="backToPrevious"
+            android:src="@drawable/backup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="统计"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/refresh" />
+        </LinearLayout>
+    </LinearLayout>
+    <TabHost
+	        android:id="@+id/app_count_tabhost"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	
+	            <TabWidget
+	                android:id="@android:id/tabs"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+	            </TabWidget>
+	
+	            <FrameLayout
+	                android:id="@android:id/tabcontent"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+	
+	                <LinearLayout
+	                    android:id="@+id/count_tab1"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" 
+	                    android:layout_marginTop="9dp"
+       					android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scrollbars="vertical"
+	                    android:orientation="vertical">
+	
+                    	<View android:layout_width="match_parent"
+          					android:layout_height="1dp"
+          					android:background="@drawable/line">
+    					</View>
+	                    <LinearLayout
+					        android:layout_width="fill_parent"
+					        android:layout_height="38dp"
+	                        android:background="#CCCCCC"
+					        android:orientation="horizontal">
+						        <View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_date"
+							            android:layout_width="55dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginLeft="7dp"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:text="2013-05"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" />
+
+						        <ImageView
+						            android:id="@+id/tv_choose_count_date"
+						            android:layout_width="18dp"
+						            android:layout_height="wrap_content"
+						            android:layout_marginRight="5dp"
+						            android:layout_marginTop="9dp"
+						            android:background="@drawable/choosedate" />
+
+						         <View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_user"
+							            android:layout_width="95dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:layout_marginLeft="5dp"
+							            android:text="短信辅导用户数"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" />
+					         	<View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_down"
+							            android:layout_width="wrap_content"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:layout_marginLeft="5dp"
+							            android:text="下载应用数"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" />
+						        <LinearLayout  
+							      	android:layout_width="fill_parent"  
+							        android:layout_height="wrap_content"  
+							       	android:gravity="right" >  
+							       		<View android:layout_width="1dp"
+								          android:layout_height="wrap_content"
+								          android:background="@drawable/line1">
+								    	</View>
+					    		</LinearLayout>  
+					    </LinearLayout>
+						<View android:layout_width="match_parent"
+          					android:layout_height="1dp"
+          					android:background="@drawable/line">
+    					</View>
+	                    <ListView
+	                        android:id="@+id/lv_count"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content">
+	                    </ListView>
+	                    <View android:layout_width="match_parent"
+          					android:layout_height="1dp"
+          					android:background="@drawable/line">
+    					</View>
+	                    <LinearLayout
+					        android:layout_width="fill_parent"
+					        android:layout_height="38dp"
+	                        android:background="#CCCCCC"
+					        android:orientation="horizontal">
+						        <View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_date"
+							            android:layout_width="86dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:text="总计"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" 
+							            android:gravity="center"/>
+						         <View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_all_user"
+							            android:layout_width="100dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:text="2600"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" 
+							            android:gravity="center"/>
+					         	<View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_all_message"
+							            android:layout_width="wrap_content"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+						    			android:layout_marginLeft="35dp"
+							            android:text="320"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal"
+										android:gravity="center"/>
+						        <LinearLayout  
+							      	android:layout_width="fill_parent"  
+							        android:layout_height="wrap_content"  
+							       	android:gravity="right" >  
+							       		<View android:layout_width="1dp"
+								          android:layout_height="wrap_content"
+								          android:background="@drawable/line1">
+								    	</View>
+					    		</LinearLayout>  
+					    </LinearLayout>
+						<View android:layout_width="match_parent"
+          					android:layout_height="1dp"
+          					android:background="@drawable/line">
+    					</View>
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:id="@+id/count_tab2"
+	                    android:layout_marginTop="9dp"
+       					android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" 
+	                    android:orientation="vertical">
+	                    <View android:layout_width="match_parent"
+          					android:layout_height="1dp"
+          					android:background="@drawable/line">
+    					</View>
+	                    <LinearLayout
+					        android:layout_width="fill_parent"
+					        android:layout_height="38dp"
+	                        android:background="#CCCCCC"
+					        android:orientation="horizontal">
+						        <View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_p_date"
+							            android:layout_width="55dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginLeft="7dp"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:text="2013-05"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" />
+
+						        <ImageView
+						            android:id="@+id/tv_choose_p_count_date"
+						            android:layout_width="18dp"
+						            android:layout_height="wrap_content"
+						            android:layout_marginRight="5dp"
+						            android:layout_marginTop="9dp"
+						            android:background="@drawable/choosedate" />
+
+						         <View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_user"
+							            android:layout_width="95dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:layout_marginLeft="5dp"
+							            android:text="当月派单用户数"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" />
+					         	<View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_down"
+							            android:layout_width="wrap_content"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:layout_marginLeft="5dp"
+							            android:text="短信辅导用户数"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" />
+						        <LinearLayout  
+							      	android:layout_width="fill_parent"  
+							        android:layout_height="wrap_content"  
+							       	android:gravity="right" >  
+							       		<View android:layout_width="1dp"
+								          android:layout_height="wrap_content"
+								          android:background="@drawable/line1">
+								    	</View>
+					    		</LinearLayout>  
+					    </LinearLayout>
+						<View android:layout_width="match_parent"
+          					android:layout_height="1dp"
+          					android:background="@drawable/line">
+    					</View>
+	                    <ListView
+	                        android:id="@+id/lv_counta"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content" >
+	                    </ListView>
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:id="@+id/count_tab3"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" 
+	                    android:layout_marginTop="9dp"
+       					android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+	                    android:orientation="vertical">
+						
+	                    <View android:layout_width="match_parent"
+          					android:layout_height="1dp"
+          					android:background="@drawable/line">
+    					</View>
+	                    <LinearLayout
+					        android:layout_width="fill_parent"
+					        android:layout_height="38dp"
+	                        android:background="#CCCCCC"
+					        android:orientation="horizontal">
+						        <View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_jf_date"
+							            android:layout_width="55dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginLeft="7dp"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:text="2013-05"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" />
+
+						        <ImageView
+						            android:id="@+id/tv_choose_jf_count_date"
+						            android:layout_width="18dp"
+						            android:layout_height="wrap_content"
+						            android:layout_marginRight="5dp"
+						            android:layout_marginTop="9dp"
+						            android:background="@drawable/choosedate" />
+
+						         <View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_user"
+							            android:layout_width="95dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:layout_marginLeft="5dp"
+							            android:text="短信辅导用户数"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" />
+					         	<View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_down"
+							            android:layout_width="50dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:text="推荐数"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" 
+							            android:gravity="center"/>
+					        	<View android:layout_width="1dp"
+						          android:layout_height="wrap_content"
+						          android:background="@drawable/line1">
+						    	</View>
+						        <TextView
+							            android:id="@+id/tv_count_down"
+							            android:layout_width="50dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="9dp"
+						    			android:layout_marginBottom="9dp"
+							            android:text="订购数"
+							            android:textColor="@color/black"
+							            android:textSize="13sp"
+							            android:textStyle="normal" 
+							            android:gravity="center"/>
+						        <LinearLayout  
+							      	android:layout_width="fill_parent"  
+							        android:layout_height="wrap_content"  
+							       	android:gravity="right" >  
+							       		<View android:layout_width="1dp"
+								          android:layout_height="wrap_content"
+								          android:background="@drawable/line1">
+								    	</View>
+					    		</LinearLayout>  
+					    </LinearLayout>
+						<View android:layout_width="match_parent"
+          					android:layout_height="1dp"
+          					android:background="@drawable/line">
+    					</View>
+	                    <ListView
+	                        android:id="@+id/lv_countjf"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content" >
+	                    </ListView>
+	                </LinearLayout>
+	            </FrameLayout>
+	        </LinearLayout>
+    	</TabHost>
+
+</LinearLayout>

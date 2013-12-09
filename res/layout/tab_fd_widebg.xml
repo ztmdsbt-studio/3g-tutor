@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal|center_vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/tvTabItemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@drawable/selector_tab_fd_product_type"
+        android:gravity="center_horizontal|center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvTabItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

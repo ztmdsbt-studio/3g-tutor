@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_recommend"
+    style="@style/Theme_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recommand_dialog_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="293.33dp"
+        android:layout_height="326.67dp" >
+
+        <Button
+            android:id="@+id/recommend_btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="33dp"
+            android:background="@drawable/selector_operate_cancel" />
+
+        <Button
+            android:id="@+id/recommend_btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="33dp"
+            android:background="@drawable/selector_operate_conform" />
+
+        <EditText
+            android:id="@+id/ed_product_recommend_content"
+            android:layout_width="226.67dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fd_text_edit"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:padding="3dp"
+            android:gravity="top|left"
+            android:text="在遇见里，邂逅是不分季节、时间、地域和性别的。我，不要青石路间"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="30dp"
+            android:text="辅导短信：" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/recommend_btnCancel"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="54dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvUsersCount_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户数量：" />
+
+                <TextView
+                    android:id="@+id/tv_users_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已选应用：" />
+
+                <ImageView
+                    android:id="@+id/iv_product"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="13.33dp"
+                    android:src="@drawable/jingdong" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="京东商城"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_product_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="5.6MB"
+                            android:textColor="@color/yahei"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_product_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="V6.2.0"
+                            android:textColor="@color/yahei"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="77.33dp"
+    android:orientation="horizontal"
+    android:background="@drawable/product_item_background" >
+
+    
+    <CheckBox
+		android:id="@+id/favorite_isselected"
+		android:layout_marginLeft="5sp"
+        android:layout_marginTop="10dp"
+        android:focusable="false"  
+        android:focusableInTouchMode="false"  
+        android:clickable="false"  
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		/>
+
+    
+    <ImageView
+        android:id="@+id/iv_favorite"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="13.33dp"		
+        android:layout_marginLeft="7dp"
+        />
+
+    <LinearLayout
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_favorite_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="sans-serif-light"
+            android:text="京东商城"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_favorite_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:text="5.6MB"
+                android:textColor="@color/yahei"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_favorite_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:text="V6.2.0"
+                android:textColor="@color/yahei"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_favorite_description"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-light"
+            android:text="京东商城是目前电器..."
+            android:textSize="11sp" />
+    </LinearLayout>
+    
+    <Button android:id="@+id/tb_favorite_do_tutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="11dp"
+            android:focusable="false"
+            android:background="@drawable/selector_product_coach"/>
+    
+</LinearLayout>

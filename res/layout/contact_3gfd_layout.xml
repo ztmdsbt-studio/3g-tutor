@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="35dp" -->
+    <!-- android:text="辅导" -->
+    <!-- android:id = "@+id/contactrecommend" -->
+    <!-- android:textColor="@color/white" -->
+    <!-- android:textSize="15sp" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33.33dp"
+        android:background="@drawable/searchbackground" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/zwdllpdfdyh"
+            android:textColor="@color/green"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+<!--     <ImageView -->
+<!--         android:id="@+id/cursor" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:background="#EEEEEE" -->
+<!--         android:scaleType="matrix" /> -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_banner"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <TabHost
+        android:id="@+id/fd_tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/lv_products"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@id/lv_products"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@id/lv_products"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@id/lv_products"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@id/lv_products"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">3G辅导</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">3G辅导</string>
+    <string name="title_activity_login">登录系统</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_user_info">UserInfo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_todo_exchange">TodoExchangeActivity</string>
+    <string name="dimness_autocode"><u>不清楚，换一张</u></string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="remove_from_favorite">移出收藏夹</string>
+    <string name="import_to_favorite">加入收藏夹</string>
+    <string name="to_tutor">辅导</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="find_pwd"><u>找回密码</u></string>
+    <string name="title_activity_entry">3G辅导</string>
+    <string name="title_activity_customer_recommend">用户推荐</string>
+    <string name="zwdllpdfdyh">在网低流量派单辅导用户</string>
+    <string name="title_activity_app_detail">AppDetail</string>
+    <string name="title_activity_jf_app_detail">jfAppDetail</string>
+    <string name="title_activity_app_tutor">AppTutorActivity</string>
+    <string name="input_custom_phone">请输入客户手机号码</string>
+    <string name="return_index">返回首页</string>
+    <string name="dialog_title">提示</string>
+    <string name="continue_do_tutor">继续推荐</string>
+    <string name="cancel_favorite">取消收藏</string>
+    <string name="continue_do_tutor_msg">推荐成功，是否继续推荐？</string>
+    <string name="confirm_remove_app">是否要将选中的应用移出收藏夹？</string>
+    <string name="phone_input_note">注：最多可同时添加六个手机号码, 手机号码之间用英文状态下逗号隔开.</string>
+    <string name="searth_filter">筛选条件：</string>
+    <string name="search_scpoe">范围：</string>
+    <string name="search_times">次</string>
+    <string name="send">发送</string>
+    <string name="searth_filter_results">筛选数据：</string>
+    <string name="operate_completed">操作完成！</string>
+    <string name="this_mouth_users_count">本月派单用户</string>
+    <string name="this_mouth_tutor_count">当月辅导次数</string>
+    <string name="sendPassword"><u>发送新密码</u></string>
+    <!-- Arraies -->
+
+    <string-array name="search_scope_type">
+        <item>本页用户</item>
+        <item>全部用户</item>
+    </string-array>
+    <string-array name="search_platform">
+        <item>全部</item>
+        <item>Windows</item>
+        <item>Android</item>
+        <item>Linux</item>
+        <item>Bada</item>
+        <item>黑莓</item>
+        <item>Iphone</item>
+    </string-array>
+
+    <string name="searth_platform">平台：</string>
+    <string name="search_monthly">当月辅导次数≤</string>
+    <string name="screening">筛选</string>
+    <string name="title_activity_forget_pwd">ForgetPwdActivity</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="title_activity_serach_result">SerachResultActivity</string>
+
+</resources>

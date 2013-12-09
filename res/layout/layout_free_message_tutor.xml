@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/phone_input"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_users_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:background="@color/touming"
+            android:ems="11"
+            android:hint="@string/input_custom_phone"
+            android:inputType="phone"
+            android:textSize="13sp" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:text="@string/phone_input_note"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_freemessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_recommend"
+        android:gravity="center_horizontal"
+        android:onClick="sendMessageDiy" />
+
+</LinearLayout>

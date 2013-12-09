@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="77.33dp"
+    android:orientation="horizontal"
+    android:background="@drawable/product_item_background" >
+
+    <ImageView
+        android:id="@+id/iv_jf"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="13.33dp"		
+        android:layout_marginLeft="13.33dp"
+        android:src="@drawable/jingdong" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+		 	<TextView
+	            android:id="@+id/tv_jf_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:layout_marginTop="13dp"
+	            android:text="流量卡10元30M"
+	            android:textColor="@color/black"
+	            android:textSize="13sp"
+	            android:textStyle="normal" />
+            
+
+            <TextView
+                android:id="@+id/tv_jf_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                 android:layout_marginTop="13dp"
+                android:text="100"
+                android:textColor="@color/croci"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_jf_danwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="13dp"
+                android:text="分"
+                android:textColor="@color/yahei"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_jf_description"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:text="流量包资费优惠，订购便捷，让您畅游3G，再也不用"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+    
+    <Button android:id="@+id/tb_do_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="24dp"
+            android:focusable="false"
+            android:background="@drawable/selector_recommend_product"/>
+    
+</LinearLayout>

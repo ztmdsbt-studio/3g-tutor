@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:app" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="app" targetNamespace="urn:app" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types xmlns="http://schemas.xmlsoap.org/wsdl/" />
+  <wsdl:message name="getAppCategoryRequest" />
+  <wsdl:message name="getAppCategoryResponse">
+    <wsdl:part name="getAppCategory" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAppRequest">
+    <wsdl:part name="category" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAppResponse">
+    <wsdl:part name="getApp" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="appPort">
+    <wsdl:operation name="getAppCategory">
+      <wsdl:input message="tns:getAppCategoryRequest" />
+      <wsdl:output message="tns:getAppCategoryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getApp">
+      <wsdl:input message="tns:getAppRequest" />
+      <wsdl:output message="tns:getAppResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="appBinding" type="tns:appPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getAppCategory">
+      <soap:operation soapAction="urn:app#app#getAppCategory" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:app" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:app" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApp">
+      <soap:operation soapAction="urn:app#app#getApp" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:app" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:app" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="app">
+    <documentation />
+    <wsdl:port name="appPort" binding="tns:appBinding">
+      <soap:address location="http://timeapi.snty.cc:80/info.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
